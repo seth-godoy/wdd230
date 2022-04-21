@@ -5,9 +5,13 @@ body {
 
 header, main, footer {
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
+}
+
+header div {
+    max-width: 120px;
 }
 
 header img {
-    max-width: 120px;
+    width: 100%;
 }
