@@ -9,27 +9,26 @@ header, main, footer {
     margin: auto;
 }
 
-/* HEADER */
-header {
+header, footer {
     color: #fff;
     background-color: #6A0DAD;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+/* HEADER */
+header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #000;
-}
-
-header div {
-    max-width: 120px;
-    margin-left: 20px;
-    grid-column: 1/2;
 }
 
 header img {
-    width: 100%;
+    max-width: 120px;
+    margin-left: 20px;
+    grid-column: 1/2;
     box-shadow: 0 0 20px #000;
 }
 
@@ -53,20 +52,16 @@ main ul li {
 
 /* FOOTER */
 footer {
-    color: #fff;
-    background-color: #6A0DAD;
     padding: 10px;
     margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #000;
-}
-
-footer p:nth-child(2) {
-    color: #FFFF00;
-    margin-top: -15px;
 }
 
 footer p {
     text-align: center;
     font-size: 1.2rem;
+}
+
+footer p:nth-child(2) {
+    color: #FFFF00;
+    margin-top: -15px;
 }
