@@ -1,0 +1,24 @@
+@media (min-width: 32.5em) {
+    /* ALL CONTENT */
+    header, footer {
+        border-radius: 10px;
+    }
+
+    /* HEADER */
+    header {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 130px 1fr;
+        padding-bottom: 20px;
+    }
+
+    header img {
+        margin-left: 20px;
+    }
+
+    /* MAIN */
+    main h2 {
+        text-align: left;
+    }
+}

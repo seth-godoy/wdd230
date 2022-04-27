@@ -12,35 +12,32 @@ header, main, footer {
 header, footer {
     color: #fff;
     background-color: #6A0DAD;
-    border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
 
 /* HEADER */
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
+    padding-bottom: 5px;
 }
 
 header img {
+    display: block;
+    margin: auto;
     max-width: 120px;
-    margin-left: 20px;
-    grid-column: 1/2;
     box-shadow: 0 0 20px #000;
 }
 
 header h1 {
     text-align: center;
-    grid-column: 2/4;
     font-size: 3rem;
     text-shadow: 0 0 20px #000;
 }
 
 /* MAIN */
 main h2 {
+    text-align: center;
+    padding-bottom: 10px;
     font-size: 2rem;
     border-bottom: 2px solid #808080;
 }
@@ -63,5 +60,5 @@ footer p {
 
 footer p:nth-child(2) {
     color: #FFFF00;
-    margin-top: -15px;
+    margin-top: -10px;
 }
