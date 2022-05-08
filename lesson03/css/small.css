@@ -1,0 +1,116 @@
+/* #191A19 #1E5128 #4E9F3D #D8E9A8 */
+/* ALL CONTENT */
+body {
+    font-size: 16px;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
+header, nav, main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-color: #1E5128;
+    color: #fff;
+}
+
+header h1 {
+    font-family: "Exo 2";
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    font-size: 2.2rem;
+}
+
+/* NAV */
+nav {
+    background-color: #191A19;
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background-color: #335B33;
+	color: yellow;
+}
+
+nav ul li a.active {
+	color: yellow;
+}
+
+/* MAIN */
+main h2 {
+    font-family: "Exo 2";
+    margin-left: 3%;
+}
+
+main p {
+    margin: 0 3%;
+    line-height: 1.8rem;
+}
+
+main p, main ul {
+    font-size: 1.2rem;
+}
+
+main img {
+    margin-left: 3%;
+}
+
+main img.bench {
+    max-width: 200px;
+}
+
+main img.persona {
+    max-width: 120px;
+}
+
+main ul {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+main ul.colors {
+    margin-right: 45%;
+    list-style: none;
+}
+
+main ul.colors li {
+    padding: 0.5rem;
+}
+
+main ul li.c1 {
+    background-color: #191A19;
+    color: #fff; 
+}
+
+main ul li.c2 {
+    background-color: #1E5128;
+    color: #fff; 
+}
+
+main ul li.c3 {
+    background-color: #4E9F3D;
+    color: #fff; 
+}
+
+main ul li.c4 {
+    background-color: #D8E9A8; 
+}
