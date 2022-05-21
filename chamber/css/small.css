@@ -1,0 +1,163 @@
+/* ---------- ALL CONTENT ---------- */
+body {
+    font-size: 16px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    margin: 0;
+    background-color: #D8E9A8;
+}
+
+.logo {
+    max-width: 65px;
+    padding: 3px;
+    background-color: #D8E9A8;
+    border: 2px solid #191A19;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.full-header, .full-footer {
+    background-color: #1E5128;
+    color: #fff;
+    box-shadow: 0 0 20px #000;
+}
+
+h1, h2, h3 {
+    font-family: "Exo 2";
+}
+
+/* ---------- HEADER ---------- */
+header h1, h2 {
+    margin: 0;
+}
+
+/* -- Top header grid -- */
+header div.top-header {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+header div.top-header img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+header div.top-header h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+header div.top-header h2 {
+    font-size: 1.3rem;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+/* -- End of top header grid -- */
+
+header div a {
+    text-decoration: none;
+}
+
+header div a img {
+    max-width: 50px;
+}
+
+/* -- Navigation -- */
+header nav {
+    background-color: #191A19;
+    margin-top: 10px;
+}
+
+header nav button {
+    padding: .5rem .8rem;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: .8rem .8rem;
+}
+
+header nav ul li a:hover{
+    background-color: #163E1E;
+	color: yellow;
+}
+
+/* Responsive navigation */
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#navBtn span:nth-child(1) {display: block;}
+#navBtn span:nth-child(2) {display: none;}
+
+#navBtn.open span:nth-child(1) {display: none;}
+#navBtn.open span:nth-child(2) {display: block;}
+
+/* - End of Responsive navigation - */
+/* -- End of Navigation -- */
+
+header h2#current-date {
+    text-align: center;
+    margin: 15px 0 10px 0;
+    border: 2px solid #191A19;
+    background-color: #163E1E;
+    padding: 10px;
+}
+
+/* ---------- MAIN ---------- */
+main section {
+    background-color: #fff;
+    border: 2px solid #191A19;
+    margin: 10px auto;
+}
+
+main section h3, main section p {
+    margin: 0;
+    padding: 10px;
+}
+
+main section p {
+    margin-top: -5px;
+}
+
+/* ---------- FOOTER ---------- */
+footer img.logo {
+    display: block;
+    margin: auto;
+    max-width: 95px;
+    margin-top: 15px;
+}
+
+footer h3, footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #fff;
+}
+
+footer p.copyright {
+    border-top: 2px solid #191A19;
+    padding: 10px 0;
+    margin-bottom: -5px;
+    line-height: 1.5rem;
+}
