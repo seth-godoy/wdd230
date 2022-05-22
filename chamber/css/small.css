@@ -29,6 +29,22 @@ h1, h2, h3 {
     font-family: "Exo 2";
 }
 
+/* Monday-Tuesday banner */
+h2#banner {
+    background-color: #4E9F3D;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+h2.showme {
+    display: block;
+  }
+  
+h2.hideme {
+display: none;
+}
+
 /* ---------- HEADER ---------- */
 header h1, h2 {
     margin: 0;
