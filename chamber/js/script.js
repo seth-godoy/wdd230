@@ -29,9 +29,7 @@ x.onclick = toggleMenu;
 const dayNumber = now.getDay();
 const banner = document.querySelector('#banner');
 
-if (dayNumber == 1) {
-    banner.classList.add('showme');
-} else if (dayNumber == 2) {
+if (dayNumber == 1 || dayNumber == 2) {
     banner.classList.add('showme');
 } else {
     banner.classList.add('hideme');
