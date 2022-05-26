@@ -3,22 +3,26 @@ const addchap = document.getElementById('addchap');
 const listchap = document.getElementById('listchap');
 
 addchap.addEventListener('click', function() {
-    const chap = favchap.value;
-    favchap.value = '';
 
-    const listItem = document.createElement('li');
-    const listText = document.createElement('span');
-    const listBtn = document.createElement('button');
+    if (favchap.value != '') {
+        const chap = favchap.value;
+        favchap.value = '';
 
-    listItem.appendChild(listText);
-    listText.textContent = chap;
-    listItem.appendChild(listBtn);
-    listBtn.textContent = '❌';
-    listchap.appendChild(listItem);
+        const listItem = document.createElement('li');
+        const listText = document.createElement('span');
+        const listBtn = document.createElement('button');
 
-    listBtn.addEventListener('click', function () {
-        listchap.removeChild(listItem);
-    });
+        listItem.appendChild(listText);
+        listText.textContent = chap;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = '❌';
+        listchap.appendChild(listItem);
 
-    favchap.focus();
+        listBtn.addEventListener('click', function () {
+            listchap.removeChild(listItem);
+        });
+
+        favchap.focus();
+    };
+
 });
