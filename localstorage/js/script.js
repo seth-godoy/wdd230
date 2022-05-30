@@ -1,12 +1,13 @@
 const displayName = document.getElementById('displayName');
 const enterName = document.getElementById('enterName');
-const savename = document.getElementById('saveName');
+const saveName = document.getElementById('saveName');
 const showName = document.getElementById('showName');
 
-enterName.addEventListener('click', function() {
-    let myName = enterName.value;
+saveName.addEventListener('click', function() {
+    const myName = enterName.value;
     enterName.value = '';
     localStorage.setItem('name', myName);
+    enterName.focus()
 });
 
 showName.addEventListener('click', function() {
