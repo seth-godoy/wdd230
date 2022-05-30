@@ -9,13 +9,13 @@ saveName.addEventListener('click', function() {
     let myName = enterName.value;
     enterName.value = '';
     localStorage.setItem('name', myName);
-    enterName.focus()
+    enterName.focus();
 });
 
 showName.addEventListener('click', function() {
-    displayName.textContent = localStorage.getItem('name')
-})
+    displayName.textContent = localStorage.getItem('name');
+});
 
 deleteName.addEventListener('click', function() {
-    localStorage.clear()
-})
+    localStorage.clear();
+});
